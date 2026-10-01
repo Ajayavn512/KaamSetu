@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1457d9">
+  <title>KaamSetu | Digital Help Platform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="KaamSetu home"><span class="brand-mark">K</span><span>KaamSetu</span></a>
+    <div class="language-switch">
+      <button id="langHi" class="lang active" type="button">हिंदी</button>
+      <button id="langEn" class="lang" type="button">English</button>
+    </div>
+  </header>
+  <main class="container">
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow" data-hi="आपका डिजिटल साथी" data-en="YOUR DIGITAL COMPANION">आपका डिजिटल साथी</span>
+        <h1 data-hi="आपके ज़रूरी काम, <span>एक ही जगह।</span>" data-en="Your important tasks, <span>in one place.</span>">आपके ज़रूरी काम, <span>एक ही जगह।</span></h1>
+        <p data-hi="नौकरी, स्कॉलरशिप और रोज़मर्रा के डिजिटल काम व्यवस्थित रखें।" data-en="Keep jobs, scholarships, and everyday digital tasks organised.">नौकरी, स्कॉलरशिप और रोज़मर्रा के डिजिटल काम व्यवस्थित रखें।</p>
+        <a class="primary-btn" href="#dashboard" data-hi="शुरू करें ↓" data-en="Get started ↓">शुरू करें ↓</a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="art-card main-card"><div class="check-icon">✓</div><strong data-hi="काम व्यवस्थित हैं" data-en="Tasks organised">काम व्यवस्थित हैं</strong><span data-hi="एक कदम एक समय पर" data-en="One step at a time">एक कदम एक समय पर</span></div>
+        <div class="float-card float-top">📅 <span data-hi="महत्वपूर्ण तारीखें" data-en="Important dates">महत्वपूर्ण तारीखें</span></div>
+        <div class="float-card float-bottom">📋 <span data-hi="आपकी टू-डू लिस्ट" data-en="Your to-do list">आपकी टू-डू लिस्ट</span></div>
+      </div>
+    </section>
+    <section id="dashboard" class="dashboard">
+      <div class="section-heading">
+        <div><span class="eyebrow" data-hi="आपका डैशबोर्ड" data-en="YOUR DASHBOARD">आपका डैशबोर्ड</span><h2 data-hi="आज के काम" data-en="Your tasks">आज के काम</h2></div>
+        <span class="local-badge" data-hi="इस डिवाइस पर सेव" data-en="Saved on this device">इस डिवाइस पर सेव</span>
+      </div>
+      <div class="task-entry">
+        <input id="taskInput" type="text" maxlength="120" placeholder="नया काम लिखें..." aria-label="New task">
+        <button id="addTask" class="primary-btn" type="button" data-hi="काम जोड़ें +" data-en="Add task +">काम जोड़ें +</button>
+      </div>
+      <div id="taskList" class="task-list"></div>
+      <p id="emptyState" class="empty-state" data-hi="अभी कोई काम नहीं है। अपना पहला काम जोड़ें!" data-en="No tasks yet. Add your first task!">अभी कोई काम नहीं है। अपना पहला काम जोड़ें!</p>
+    </section>
+    <section class="feature-grid">
+      <article class="feature-card"><div class="feature-icon blue">✓</div><h3 data-hi="काम की सूची" data-en="Task list">काम की सूची</h3><p data-hi="अपने रोज़ के काम लिखें और पूरे होने पर टिक करें।" data-en="Write down daily tasks and mark them done.">अपने रोज़ के काम लिखें और पूरे होने पर टिक करें।</p></article>
+      <article class="feature-card"><div class="feature-icon purple">▦</div><h3 data-hi="जॉब ट्रैकर" data-en="Job tracker">जॉब ट्रैकर</h3><p data-hi="नौकरी के आवेदन और उनकी स्थिति ट्रैक करना अगला फीचर होगा।" data-en="Tracking job applications and their status is coming next.">नौकरी के आवेदन और उनकी स्थिति ट्रैक करना अगला फीचर होगा।</p></article>
+      <article class="feature-card"><div class="feature-icon green">⌁</div><h3 data-hi="डिजिटल गाइड" data-en="Digital guides">डिजिटल गाइड</h3><p data-hi="आसान हिंदी और अंग्रेज़ी में डिजिटल काम सीखें।" data-en="Learn digital tasks in simple Hindi and English.">आसान हिंदी और अंग्रेज़ी में डिजिटल काम सीखें।</p></article>
+    </section>
+    <section class="notice"><strong data-hi="आपकी प्राइवेसी ज़रूरी है" data-en="Your privacy matters">आपकी प्राइवेसी ज़रूरी है</strong><p data-hi="यह शुरुआती डेमो कामों को इसी ब्राउज़र में सेव करता है। अभी कोई पासवर्ड या निजी दस्तावेज़ न डालें। Firebase लॉगिन अगले चरण में जोड़ा जाएगा।" data-en="This starter demo stores tasks in this browser only. Do not enter passwords or private documents. Firebase sign-in will be added in the next step.">यह शुरुआती डेमो कामों को इसी ब्राउज़र में सेव करता है। अभी कोई पासवर्ड या निजी दस्तावेज़ न डालें। Firebase लॉगिन अगले चरण में जोड़ा जाएगा।</p></section>
+  </main>
+  <footer>© <span id="year"></span> KaamSetu · <span data-hi="आपका डिजिटल साथी" data-en="Your digital companion">आपका डिजिटल साथी</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
